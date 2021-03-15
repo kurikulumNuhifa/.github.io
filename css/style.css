@@ -99,7 +99,7 @@ h1,
 .h1{ 
   position: relative;
   font-family: 'Karla', sans-serif;
-  font-size: 5.725rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -202,8 +202,8 @@ ul{
 a {
   color:#D4F21B;
   -webkit-transition: color .3s ease-out;
-       -o-transition: color .3s ease-out;
-          transition: color .3s ease-out;
+  -o-transition: color .3s ease-out;
+  transition: color .3s ease-out;
 }
 
 a:hover,
@@ -542,7 +542,7 @@ ion-icon{
 
 @media(min-width: 992px){
   .navbar{
-    padding: 0 3rem;
+    padding: 0 5.5rem;
   }
 }
 
@@ -588,6 +588,18 @@ ion-icon{
   line-height: 1;
 }
 
+.navbar-brand .logo-text{
+  margin-left: .5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .25s;
+}
+
+.navbar-brand .logo-text:hover{
+  color: #d0cfca;
+}
+
 .navbar-brand:hover,
 .navbar-brand:focus{
   color:#fff;
@@ -613,7 +625,7 @@ ion-icon{
   font-family: 'Karla', sans-serif;
   position: relative;
   top:0.3rem;
-  margin-right: 4rem;
+  margin-right: 2.5rem;
 }
 
 .navbar-bottom{
@@ -626,7 +638,7 @@ ion-icon{
 
 @media (min-width: 992px){
   .navbar-bottom{
-    padding-left: 3rem;
+    padding-left: 5.5rem;
     padding-right:3rem;
   }
 }
@@ -696,7 +708,16 @@ ion-icon{
 }
 
 .nav-link{
-  padding: 0;
+  padding: 10px 20px;
+  transition: all .25s;
+}
+/* 
+.active{
+  background: #D4F21B;
+} */
+
+.nav-link:hover{
+  color:#d0cfca !important;
 }
 
 .navbar-nav-desctop li a{
@@ -909,9 +930,9 @@ ion-icon{
 /* 2.4 Navbar White */
 
 
-.navbar-white{
+/* .navbar-white{
   border-bottom: 1px solid rgba(255,255,255,0.1);
-}
+} */
 
 .navbar-white:not(.fixed) .phone,
 .navbar-white:not(.fixed) .email,
@@ -964,6 +985,10 @@ ion-icon{
   background-size: cover;
 }
 
+.text-green{
+  color: #D4F21B;
+}
+
 .opener{
   position: relative;
   z-index: 1;
@@ -974,8 +999,9 @@ ion-icon{
   background-color: rgba(255,255,255,0.9);
 }
 
-h1 + .line{
-  margin-top:15vh;
+.line{
+  margin-top:5vh;
+  /* margin-left: -9%; */
   width: 25%;
   border-top:3px  solid #D4F21B;
   transition:all .3s ease;
@@ -1041,7 +1067,7 @@ h1 + .line{
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  padding: 8rem 0 6rem;
+  padding: rem 0 6rem;
   white-space: normal;
 }
 
